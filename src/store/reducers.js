@@ -1,5 +1,4 @@
 import {combineReducers } from 'redux';//Uses combineReducers to connect Root.
-import { balancesLoading } from './actions';
 //Whenever data is loaded reducers will update state
 function web3(state = {}, action) {
     switch (action.type) {

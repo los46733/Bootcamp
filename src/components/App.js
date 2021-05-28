@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css'
 import Navbar from './Navbar'
-import Web3 from 'web3';
-import Token from '../abis/Token.json'
 import { connect } from 'react-redux'
 import {
   loadWeb3,
@@ -10,7 +8,7 @@ import {
   loadToken,
   loadExchange
 } from '../store/interactions'
-import { accountSelector, contractsLoadedSelector } from '../store/selectors'
+import { contractsLoadedSelector } from '../store/selectors'
 import Content from './Content';
 // import React, { Component }  from 'react';
 //Notes:
@@ -20,7 +18,7 @@ import Content from './Content';
 
 
 class App extends Component {
-  componentWillMount() {
+  componentDidMount() {
     this.loadBlockchainData(this.props.dispatch)//passes in Dispatch as argument for Redux
     console.log('Mounted')
   }

@@ -7,10 +7,7 @@ import {
     depositEther,
     depositToken,
     withdrawEther,
-    withdrawToken,
-    toWei,
-    ether,
-    loadToken
+    withdrawToken
 } from '../store/interactions'
 import {
     exchangeSelector,
@@ -210,7 +207,7 @@ const showForm = (props) => {
 
 
 class Balance extends Component {
-    componentWillMount() {
+    componentDidMount() {
         this.loadBlockchainData()
     }
     async loadBlockchainData() {

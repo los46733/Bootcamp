@@ -6,7 +6,6 @@
  */
 
 import Web3 from 'web3'
-import {web3} from 'web3'
 import {
     web3Loaded,
     web3AccountLoaded,

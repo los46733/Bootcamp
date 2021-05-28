@@ -12,7 +12,7 @@ import NewOrder from './NewOrder'
 
 
 class Content extends Component {
-  componentWillMount() {
+  componentDidMount() {
     this.loadBlockchainData(this.props)
   }
 

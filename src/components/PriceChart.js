@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Chart from 'react-apexcharts'// used for bulding Chart https://apexcharts.com/
 import Spinner from './Spinner'
-import { chartOptions, dummyData } from './PriceChart.config'//Config and Dummy data. CandleStick format https://apexcharts.com/docs/chart-types/candlestick/
+import { chartOptions } from './PriceChart.config'//Config and Dummy data. CandleStick format https://apexcharts.com/docs/chart-types/candlestick/
 import {
   priceChartLoadedSelector,
   priceChartSelector
